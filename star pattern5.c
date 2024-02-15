@@ -1,0 +1,31 @@
+/*
+program to print
+    *    
+   ***
+  *****
+ *******
+*********   
+*/
+#include <stdio.h>
+int main()
+{
+    int row;
+    printf("enter no of rows:");
+    scanf("%d", &row);
+    for (int r = 1; r <= row; r++)
+    {
+        for (int spc = 1; spc <= row - r; spc++)
+        {
+            printf(" ");
+        }
+        for (int c = 1; c <= 2*r - 1; c++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
